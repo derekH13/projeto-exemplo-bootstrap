@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- sticky-top é para que acompanhe a pagina durante a rolagem -->
+    <!-- estrutura navbar -->
+    <header class="navbar navbar-expand-lg sticky-top p-4" id="cabeçalho">
+        <div class="container">
+            <h1 class="navbar-brand m-0"><span class="text-colored">Game</span>time</h1>
+
+            <button data-bs-toggle="collapse" data-bs-target="#menu-navegação" class="navbar-toggler">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- navbar-colapse é importante para que o elemento suma no mobille -->
+            <nav class="navbar-collapse collapse justify-content-end" id="menu-navegação">
+
+                <!-- esse nav pills que faz os links parecer btn -->
+                <!-- d-block para que os itens fique cada um em uma linha -->
+                <!-- {propriedade} {breakingpoint} {valor} -->
+                <ul class="nav nav-pills d-block d-md-flex">
+                    <li class="nav-item fw-bold">
+                        <a class="nav-link" href="#sobre-loja">
+                            <i class="bi bi-house-door me-1"></i>
+                            Sobre o Loja
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a class="nav-link" href="#cardapio">
+                            <i class="bi bi-card-text me-1"></i>
+                            Nossos Produtos
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a class="nav-link" href="#evento">
+                            <i class="bi bi-calendar-check me-1"></i>
+                            Eventos
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a class="nav-link" href="#fale-conosco">
+                            <i class="bi bi-chat-left-text me-1"></i>
+                            Fale conosco
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- fazendo efeito de mudar o active do navbar -->
+    <div data-bs-spy="scroll" data-bs-target="#cabeçalho" data-bs-smooth-scroll="true">
+        <section id="sobre-loja">
+
+            <!-- estrutura do carousel -->
+            <div class="carousel slide" data-bs-ride="carousel" id="carousel-exemplo">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="5000">
+                        <img class="w-100" src="./game/gow.jpg" alt="Imagem de game gow">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="5000">
+                        <img class="w-100" src="./game/sonic.png" alt="Imagem de game sonic">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="5000">
+                        <img class="w-100" src="./game/mario_galaxy_jump_wallpaper_by_djcube_d13siv9-pre.jpg"
+                            alt="Imagem de game mario">
+                    </div>
+                </div>
+
+                <!-- btn de para ir para o proximo ou voltar um elemento do carousel -->
+                <button class="carousel-control-prev" data-bs-target="#carousel-exemplo" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+
+                <button class="carousel-control-next" data-bs-target="#carousel-exemplo" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+
+                <!-- btn de mostrar qual carousel esta tem que ser depois do carousel inner -->
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="0"
+                        class="active"></button>
+                    <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="2"></button>
+                </div>
+            </div>
+
+            <div class="pt-5 pb-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <img src="https://i.pinimg.com/originals/f8/05/a7/f805a713c3df0180bf2811a6db5edbdc.jpg"
+                                class="s-block w-100 rounded" alt="">
+                        </div>
+
+                        <div class="col-md-7">
+                            <h2 class="section-title mt-2 mt-md-0">Sobre a <span class="text-colored">loja</span> </h2>
+
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid doloremque quos sequi
+                                ad et culpa similique iste ducimus! Iure vel, blanditiis asperiores velit animi vero
+                                eaque dicta repellendus nihil quod.
+                            </p>
+
+                            <h3 class="section-title">Sobre o <span class="text-colored">espaço</span></h3>
+                            <p>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita architecto, quisquam
+                                corrupti rerum deleniti repellendus! Nostrum incidunt sed eveniet, possimus, iste
+                                exercitationem dolor recusandae, impedit hic delectus vitae perspiciatis voluptas.
+                            </p>
+                            <ul>
+                                <li>item 1</li>
+                                <li>item 2</li>
+                                <li>item 3</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+    </div>
+
+
+    <div data-bs-target="#cabeçalho" data-bs-spy="scroll">
+
+        <section id="evento" class="pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section-title text-center">Competições em <span>todos os Games</span></h2>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-md-4">
+                        <img class="d-block w-100 rounded mb-2"
+                            src="https://i.pinimg.com/564x/08/8a/53/088a53b4b0bbc9947413285491c6aca2.jpg" alt="">
+                        <h3 class="section-title text-colored fs-4">
+                            <i class="bi bi-dpad-fill"></i>
+                            Valorant
+                        </h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem dolor explicabo voluptate
+                            quisquam, architecto eos vero! Atque omnis beatae rem, enim, libero, accusantium ab totam
+                            facere quaerat modi quos quasi?</p>
+                    </div>
+
+                    <div class="col-md-4">
+                        <img class="d-block w-100 rounded mb-2"
+                            src="https://i.pinimg.com/564x/05/4b/8b/054b8bbf130c0aa4b21713e18ae74c9f.jpg" alt="">
+                        <h3 class="section-title text-colored fs-4">
+                            <i class="bi bi-controller"></i>
+                            Street fighter
+                        </h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem dolor explicabo voluptate
+                            quisquam, architecto eos vero! Atque omnis beatae rem, enim, libero, accusantium ab totam
+                            facere quaerat modi quos quasi?</p>
+                    </div>
+
+                    <div class="col-md-4">
+                        <img class="d-block w-100 rounded mb-2"
+                            src="https://i.pinimg.com/564x/70/01/2e/70012e8da85d8dbd326a4377b75dffb1.jpg" alt="">
+                        <h3 class="section-title text-colored fs-4">
+                            <i class="bi bi-0-circle"></i>
+                            Fifa
+                        </h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem dolor explicabo voluptate
+                            quisquam, architecto eos vero! Atque omnis beatae rem, enim, libero, accusantium ab totam
+                            facere quaerat modi quos quasi?</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+    </div>
+
+    <div data-bs-spy="scroll" data-bs-target="#cabeçalho">
+
+        <section id="cardapio" class="pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section-title text-center mb-5">
+                        Nossos <span class="text-colored">Produtos</span>
+                    </h2>
+                    <div class="row">
+
+                        <!-- aside é para que o elemento tenha a barra lateral de rolagem -->
+                        <aside class="col-md-2 mb-2">
+                            <nav class="nav nav-pills flex-column nav-produtos">
+
+                                <!-- data-bs-toggle para dizer que ela tem efeito de mudar as paginas -->
+                                <button type="button" data-bs-toggle="tab" data-bs-target="#luta"
+                                    class="nav-link fw-bold text-start text-colored active">Luta</button>
+                                <button type="button" data-bs-toggle="tab" data-bs-target="#rpg"
+                                    class="nav-link fw-bold text-start text-colored">Rpg</button>
+                                <button type="button" data-bs-toggle="tab" data-bs-target="#esporte"
+                                    class="nav-link fw-bold text-start text-colored">Esporte</button>
+                                <button type="button" data-bs-toggle="tab" data-bs-target="#estrategia"
+                                    class="nav-link fw-bold text-start text-colored">Estrategia</button>
+                                <button type="button" data-bs-toggle="tab" data-bs-target="#tiro"
+                                    class="nav-link fw-bold text-start text-colored">Tiro</button>
+                            </nav>
+                        </aside>
+
+                        <div class="col-md-10">
+                            <div class="tab-content">
+                                <div class="tab-pane active" id="luta">
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <img class="d-block rounded w-100 h-50"
+                                                src="https://i.pinimg.com/564x/4b/53/0c/4b530cef2ea9dd84c3fc64dbbd319dc6.jpg"
+                                                alt="">
+                                            <h5 class="text-colored fw-bold mt-2">The King Of Fighters</h5>
+                                            <p>Lorem, ipsum dolor sit amet consectetur.</p>
+                                        </div>
+
+                                        <div class="col-md-3">
+                                            <img class="d-block rounded w-100 h-50"
+                                                src="https://i.pinimg.com/564x/fd/97/67/fd9767dbabf83ca415dfd14bd99d9796.jpg"
+                                                alt="">
+                                            <h5 class="text-colored fw-bold mt-2">capcon vs snk</h5>
+                                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                        </div>
+
+                                        <div class="col-md-3">
+                                            <img class="d-block rounded w-100 h-50"
+                                                src="https://i.pinimg.com/564x/9b/a5/00/9ba50098bc6de887ec9c77006711db85.jpg"
+                                                alt="">
+                                            <h5 class="text-colored fw-bold mt-2">mortal kombat</h5>
+                                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                        </div>
+
+                                        <div class="col-md-3">
+                                            <img class="d-block rounded w-100 h-50 "
+                                                src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/a3651a0d-a463-484d-80da-752739346e77/d58lw3e-d7730766-42ce-4117-be7b-d6236e19fa1f.jpg/v1/fill/w_900,h_501,q_75,strp/ttt2_wallpaper_ps3_pc_psvita_by_optimusp1981_d58lw3e-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NTAxIiwicGF0aCI6IlwvZlwvYTM2NTFhMGQtYTQ2My00ODRkLTgwZGEtNzUyNzM5MzQ2ZTc3XC9kNThsdzNlLWQ3NzMwNzY2LTQyY2UtNDExNy1iZTdiLWQ2MjM2ZTE5ZmExZi5qcGciLCJ3aWR0aCI6Ijw9OTAwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.gkFPowlk9kIvVsarhaQ5fGhpu-SBsOSPxCWxVWaM-RM"
+                                                alt="">
+                                            <h5 class="text-colored fw-bold mt-2">Tekken</h5>
+                                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                        </div>
+
+                                        <div class="col-md-3">
+                                            <img class="d-block rounded w-100 h-50"
+                                                src="https://i.pinimg.com/564x/fd/97/67/fd9767dbabf83ca415dfd14bd99d9796.jpg"
+                                                alt="">
+                                            <h5 class="text-colored fw-bold mt-2">capcon vs snk</h5>
+                                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+
+                                <div class="tab-pane" id="rpg">
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <img class="d-block rounded w-100 h-50"
+                                                src="https://i.pinimg.com/564x/bb/a8/30/bba8307575762a90bc224cc672993953.jpg"
+                                                alt="">
+                                            <h5 class="text-colored fw-bold mt-2">Final Fantasy</h5>
+                                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                        </div>
+
+                                        <div class="col-md-3">
+                                            <img class="d-block rounded w-100 h-50"
+                                                src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/72b67c7e-6846-442a-9ce2-2aec92fdc78b/d354x1f-8dd26832-c332-4323-837c-ed61eb1c4704.png/v1/fill/w_900,h_675,q_80,strp/outland_loading_screen_by_ii_icecrowned_ii_d354x1f-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9Njc1IiwicGF0aCI6IlwvZlwvNzJiNjdjN2UtNjg0Ni00NDJhLTljZTItMmFlYzkyZmRjNzhiXC9kMzU0eDFmLThkZDI2ODMyLWMzMzItNDMyMy04MzdjLWVkNjFlYjFjNDcwNC5wbmciLCJ3aWR0aCI6Ijw9OTAwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.WfjHMieLLftR0jjJYbZC6gsSolBbsQUqE-oEuM5BPGQ"
+                                                alt="">
+                                            <h5 class="text-colored fw-bold mt-2">World of warcraft</h5>
+                                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                        </div>
+
+                                        <div class="col-md-3">
+                                            <img class="d-block rounded w-100 h-50"
+                                                src="https://i.pinimg.com/564x/a4/4b/9a/a44b9a182e4cce9f459d2b25a249bbf5.jpg"
+                                                alt="">
+                                            <h5 class="text-colored fw-bold mt-2">Dragon quest</h5>
+                                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                        </div>
+
+                                        <div class="col-md-3">
+                                            <img class="d-block rounded w-100 h-50 "
+                                                src="https://i.pinimg.com/564x/d4/3b/f6/d43bf60044e9004a36df4a6af0daae64.jpg"
+                                                alt="">
+                                            <h5 class="text-colored fw-bold mt-2">Dynasty Warriors 9 Empires</h5>
+                                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="tab-pane" id="esporte">
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <img class="d-block rounded w-100 h-50"
+                                                src="https://i.pinimg.com/564x/24/7b/99/247b99703a0ea89e7a6e4fd4ab303053.jpg"
+                                                alt="">
+                                            <h5 class="text-colored fw-bold mt-2">Fifa</h5>
+                                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                        </div>
+
+                                        <div class="col-md-3">
+                                            <img class="d-block rounded w-100 h-50"
+                                                src="https://i.pinimg.com/736x/3a/32/b5/3a32b51e02f67f0cc9265d0071db52bc.jpg"
+                                                alt="">
+                                            <h5 class="text-colored fw-bold mt-2">Nba</h5>
+                                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                        </div>
+
+                                        <div class="col-md-3">
+                                            <img class="d-block rounded w-100 h-50"
+                                                src="https://i.pinimg.com/564x/d6/b6/5a/d6b65afe1f26dedc3662a86cf635b81f.jpg"
+                                                alt="">
+                                            <h5 class="text-colored fw-bold mt-2">Pes</h5>
+                                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="tab-pane" id="estrategia">
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <img class="d-block rounded w-100 h-50"
+                                                src="https://i.pinimg.com/564x/e1/da/40/e1da401533783dfe9a956add557ded72.jpg"
+                                                alt="">
+                                            <h5 class="text-colored fw-bold mt-2">Duel links</h5>
+                                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                        </div>
+
+                                        <div class="col-md-3">
+                                            <img class="d-block rounded w-100 h-50"
+                                                src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/72b67c7e-6846-442a-9ce2-2aec92fdc78b/d354x1f-8dd26832-c332-4323-837c-ed61eb1c4704.png/v1/fill/w_900,h_675,q_80,strp/outland_loading_screen_by_ii_icecrowned_ii_d354x1f-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9Njc1IiwicGF0aCI6IlwvZlwvNzJiNjdjN2UtNjg0Ni00NDJhLTljZTItMmFlYzkyZmRjNzhiXC9kMzU0eDFmLThkZDI2ODMyLWMzMzItNDMyMy04MzdjLWVkNjFlYjFjNDcwNC5wbmciLCJ3aWR0aCI6Ijw9OTAwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.WfjHMieLLftR0jjJYbZC6gsSolBbsQUqE-oEuM5BPGQ"
+                                                alt="">
+                                            <h5 class="text-colored fw-bold mt-2">World of warcraft</h5>
+                                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                        </div>
+
+                                        <div class="col-md-3">
+                                            <img class="d-block rounded w-100 h-50"
+                                                src="https://i.pinimg.com/564x/1a/31/4f/1a314f65d60b615252de76fd86b4e0dc.jpg"
+                                                alt="">
+                                            <h5 class="text-colored fw-bold mt-2">Civilization VI</h5>
+                                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                        </div>
+
+                                        <div class="col-md-3">
+                                            <img class="d-block rounded w-100 h-50"
+                                                src="https://i.pinimg.com/564x/75/bd/e4/75bde478bb995e56c555a81bf0a831cc.jpg"
+                                                alt="">
+                                            <h5 class="text-colored fw-bold mt-2">Age of Mythology</h5>
+                                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="tab-pane" id="tiro">
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <img class="d-block rounded w-100 h-50"
+                                                src="https://i.pinimg.com/564x/64/87/43/6487433310b7516c5caa25230429ee3f.jpg"
+                                                alt="">
+                                            <h5 class="text-colored fw-bold mt-2">Valorant</h5>
+                                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                        </div>
+
+                                        <div class="col-md-3">
+                                            <img class="d-block rounded w-100 h-50"
+                                                src="https://i.pinimg.com/564x/5a/87/ee/5a87eeaf6a36b3e7ae15783d5662d406.jpg"
+                                                alt="">
+                                            <h5 class="text-colored fw-bold mt-2">CS:GO</h5>
+                                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                        </div>
+
+                                        <div class="col-md-3">
+                                            <img class="d-block rounded w-100 h-50"
+                                                src="https://i.pinimg.com/736x/a5/81/b0/a581b05a7bcbedc04229743a650ea2c1.jpg"
+                                                alt="">
+                                            <h5 class="text-colored fw-bold mt-2">Call of Duty: Warzone</h5>
+                                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                        </div>
+
+                                        <div class="col-md-3">
+                                            <img class="d-block rounded w-100 h-50"
+                                                src="https://i.pinimg.com/736x/09/e2/48/09e248ea42fca0452034eba96ccf4393.jpg"
+                                                alt="">
+                                            <h5 class="text-colored fw-bold mt-2">Gta</h5>
+                                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+
+<div class="container" data-bs-target="cabeçalho" data-bs-spy="scroll">
+    
+
+    <section id="fale-conosco" class="pt-5 pb-5">
+        <div class="container">
+            <h2 class="section-title text-center mb-4">Fale <span class="text-colored">conosco</span></h2>
+        </div>
+        <div class="row">
+            <div class="col-md-7">
+                <form action="">
+                    <div class="mb-3">
+                        <label class="form-label fw-bold text-colored" for="nome">Seu nome:</label>
+                        <input type="text" id="nome" class="form-control" required>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label fw-bold text-colored" for="email">Seu e-mail:</label>
+                        <input type="email" id="email" class="form-control" required>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label fw-bold text-colored" for="tel">Seu telefone opcional:</label>
+                        <input type="tel" id="tel" class="form-control">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label fw-bold text-colored" for="mensagem">Seu mensagem:</label>
+                        <textarea class="form-control" id="mensagem" required></textarea>
+                    </div>
+                    <button type="submit" class="fw-bold">Enviar</button>
+                </form>
+            </div>
+
+            <!-- da pra criar row no col -->
+            <div class="col-md-5">
+                <div class="row">
+                    <h1 class="section-title text-colored fs-2 mt-5">
+                        <i class="bi bi-hand-thumbs-up-fill"></i>
+                        Redes Sociais</h1>
+                    <ul class="sociais-link">
+                        <li class="fs-3">
+                            <a href="#">
+                                <i class="bi bi-facebook text-colored"></i>
+                            </a>
+                        </li>
+                        <li class="fs-3 me-1 ms-1">
+                            <a href="#">
+                                <i class="bi bi-instagram text-colored"></i>
+                            </a>
+                        </li>
+                        <li class="fs-3">
+                            <a href="#">
+                                <i class="bi bi-whatsapp text-colored"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                   
+                <div class="row mt-4">
+                    <h3  class="section-title text-colored fs-2">
+                        <i class="bi bi-cursor-fill"></i>
+                        Endereço</h3>
+                    <p>Rua Algo Exemplo n° 13, Bairro ABC - SP</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
